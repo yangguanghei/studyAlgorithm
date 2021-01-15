@@ -15,6 +15,10 @@
 		18649EED25B168E7006554BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18649EEB25B168E7006554BE /* LaunchScreen.storyboard */; };
 		18649EF825B168E7006554BE /* ____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18649EF725B168E7006554BE /* ____Tests.swift */; };
 		18649F0325B168E7006554BE /* ____UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18649F0225B168E7006554BE /* ____UITests.swift */; };
+		18649F1425B16913006554BE /* Bubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18649F1325B16913006554BE /* Bubble.swift */; };
+		18649F1C25B17764006554BE /* Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18649F1B25B17764006554BE /* Selection.swift */; };
+		18649F2125B180E0006554BE /* Insertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18649F2025B180E0006554BE /* Insertion.swift */; };
+		18649F2625B19BA1006554BE /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18649F2525B19BA1006554BE /* Shell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		18649EFE25B168E7006554BE /* 0.算法UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "0.算法UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18649F0225B168E7006554BE /* ____UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "____UITests.swift"; sourceTree = "<group>"; };
 		18649F0425B168E7006554BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18649F1325B16913006554BE /* Bubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bubble.swift; sourceTree = "<group>"; };
+		18649F1B25B17764006554BE /* Selection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selection.swift; sourceTree = "<group>"; };
+		18649F2025B180E0006554BE /* Insertion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insertion.swift; sourceTree = "<group>"; };
+		18649F2525B19BA1006554BE /* Shell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +92,9 @@
 				18649F0125B168E7006554BE /* 0.算法UITests */,
 				18649EDE25B168E6006554BE /* Products */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		18649EDE25B168E6006554BE /* Products */ = {
 			isa = PBXGroup;
@@ -102,6 +112,10 @@
 				18649EE025B168E6006554BE /* AppDelegate.swift */,
 				18649EE225B168E6006554BE /* SceneDelegate.swift */,
 				18649EE425B168E6006554BE /* ViewController.swift */,
+				18649F1325B16913006554BE /* Bubble.swift */,
+				18649F1B25B17764006554BE /* Selection.swift */,
+				18649F2025B180E0006554BE /* Insertion.swift */,
+				18649F2525B19BA1006554BE /* Shell.swift */,
 				18649EE625B168E6006554BE /* Main.storyboard */,
 				18649EE925B168E7006554BE /* Assets.xcassets */,
 				18649EEB25B168E7006554BE /* LaunchScreen.storyboard */,
@@ -259,8 +273,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				18649EE525B168E6006554BE /* ViewController.swift in Sources */,
+				18649F2625B19BA1006554BE /* Shell.swift in Sources */,
+				18649F2125B180E0006554BE /* Insertion.swift in Sources */,
+				18649F1C25B17764006554BE /* Selection.swift in Sources */,
 				18649EE125B168E6006554BE /* AppDelegate.swift in Sources */,
 				18649EE325B168E6006554BE /* SceneDelegate.swift in Sources */,
+				18649F1425B16913006554BE /* Bubble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +457,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4686HA3AU;
 				INFOPLIST_FILE = "0.算法/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +477,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N4686HA3AU;
 				INFOPLIST_FILE = "0.算法/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
