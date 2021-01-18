@@ -20,7 +20,8 @@ class ViewController: UIViewController {
 //		bubbleTest()
 //		selectionTest()
 //		insertionTest()
-		shellTest()
+//		shellTest()
+        mergeTest()
 	}
 
 }
@@ -28,6 +29,13 @@ class ViewController: UIViewController {
 
 extension ViewController {
 	
+    /// 归并测试
+    func mergeTest() {
+        var array = [8, 6, 4, 5, 7, 2, 1, 3]
+        Merge.sort(array: &array)
+        print(array)
+    }
+    
 	/// 冒泡测试
 	func bubbleTest() {
 		var array = [6, 5, 4, 3, 2, 1]
