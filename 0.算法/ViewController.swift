@@ -32,6 +32,7 @@ extension ViewController {
     /// 归并测试
     func mergeTest() {
         var array = [8, 6, 4, 5, 7, 2, 1, 3]
+        print(array)
         Merge.sort(array: &array)
         print(array)
     }

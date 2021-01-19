@@ -13,6 +13,10 @@ struct Merge {
     static var assist = [Int]()
     
     static func sort(array: inout [Int]) {
+        assist.removeAll()
+        for i in 0..<array.count {
+            assist.append(0)
+        }
         sort(array: &array, min: 0, max: array.count - 1)
     }
     
@@ -43,14 +47,17 @@ struct Merge {
             }
         }
         while p1 <= mid {
-            assist[i] = p1
+            assist[i] = array[p1]
             p1 += 1
             i += 1
         }
         while p2 <= max {
-            assist[i] = p2
+            assist[i] = array[p2]
             p2 += 1
             i += 1
+        }
+        for index in min...max {
+            array[index] = assist[index]
         }
         
     }
