@@ -21,7 +21,8 @@ class ViewController: UIViewController {
 //		selectionTest()
 //		insertionTest()
 //		shellTest()
-        mergeTest()
+//        mergeTest()
+        quickTest()
 	}
 
 }
@@ -29,6 +30,14 @@ class ViewController: UIViewController {
 
 extension ViewController {
 	
+    /// 快速排序测试
+    func quickTest() {
+        var array = [8, 6, 4, 5, 7, 2, 1, 3]
+        print(array)
+        Quick.sort(array: &array)
+        print(array)
+    }
+    
     /// 归并测试
     func mergeTest() {
         var array = [8, 6, 4, 5, 7, 2, 1, 3]

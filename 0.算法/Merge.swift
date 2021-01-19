@@ -20,7 +20,7 @@ struct Merge {
         sort(array: &array, min: 0, max: array.count - 1)
     }
     
-    static func sort(array: inout [Int], min: Int, max: Int) {
+    private static func sort(array: inout [Int], min: Int, max: Int) {
         if max <= min {
             return
         }
@@ -30,7 +30,7 @@ struct Merge {
         merge(array: &array, min: min, mid: mid, max: max)
     }
     
-    static func merge(array: inout [Int], min: Int, mid: Int, max: Int) {
+    private static func merge(array: inout [Int], min: Int, mid: Int, max: Int) {
         var i = min
         var p1 = min
         var p2 = mid + 1
@@ -63,7 +63,7 @@ struct Merge {
     }
     
     /// 比较大小
-    static func compare(a: Int, b: Int) -> Bool {
+    private static func compare(a: Int, b: Int) -> Bool {
         if a > b {
             return true
         } else {
